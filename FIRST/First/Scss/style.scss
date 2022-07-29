@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+//null
+
+@import "null";
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: 
+                    [start] "header" [row2]
+                    [row2] "main" [row3]
+                    [row3] "footer" [row-end]
+    ;
+    grid-template:minmax(70px, auto) 1fr minmax(50px, auto) / 1fr;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: red;
+
+}
+.main {
+    grid-area: main;
+    background-color: aqua;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 20px;
+    background-color: bisque;
+}
+
